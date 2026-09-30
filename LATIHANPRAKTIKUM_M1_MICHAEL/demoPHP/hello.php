@@ -1,3 +1,3 @@
 <?php
-echo "Halo ini pemrograman PHP";
+  echo "Halo ini pemrograman PHP";
 ?>
