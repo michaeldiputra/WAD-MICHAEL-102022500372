@@ -1,15 +1,78 @@
 <!doctype html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Client Site</title>
+    <meta name="description" content="Profil singkat mahasiswa dan tautan media sosial." />
+    <title>Personal Web</title>
+    <link rel="icon" href="src/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <div class="profile-img-container">
-      <img class="profile-img" src="src/20260304_151713.jpg" alt="Profile Picture" />
-    </div>
+    <main class="profile">
+      <header class="profile-header">
+        <img class="profile-img" src="src/20260304_151713.jpg" alt="Foto profil michael" />
+        <h3 class="subtitle">102022500372</h3>
+        <h1>Michael Ray Diputra</h1>
+        <p class="subtitle">S1 Sistem Informasi · Fakultas Rekayasa Industri</p>
+      </header>
+
+      <div class="about">
+        <h2 id="about-title">Tentang Saya</h2>
+        <p>
+          Halo! Saya mahasiswa <strong>Program Studi Sistem Informasi</strong>. Saya tertarik belajar teknologi baru dan selalu berusaha menjadi lebih baik.
+        </p>
+      </div>
+
+      <div class="social">
+        <h4 id="social-title">Temukan Saya</h4>
+        <nav class="social-links">
+          <a href="https://github.com/michaeldiputra" target="_blank">GitHub</a>
+          <a href="https://www.instagram.com/michael_257raydi" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/michaeldiputra" target="_blank">LinkedIn</a>
+        </nav>
+      </div>
+
+      <div class="details">
+        <h5 id="details-title">Data Akademik</h5>
+        <table aria-labelledby="details-title">
+          <tbody>
+            <tr>
+              <th scope="row">Nama</th>
+              <td>Michael Ray Diputra</td>
+            </tr>
+            <tr>
+              <th scope="row">NIM</th>
+              <td>102022500372</td>
+            </tr>
+            <tr>
+              <th scope="row">Program Studi</th>
+              <td>S1 Sistem Informasi</td>
+            </tr>
+            <tr>
+              <th scope="row">Fakultas</th>
+              <td>Rekayasa Industri</td>
+            </tr>
+            <tr>
+              <th scope="row">Angkatan</th>
+              <td>2025</td>
+            </tr>
+            <tr>
+              <th scope="row">Universitas</th>
+              <td>Telkom University Bandung</td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="created">
+          Created by
+          <time datetime="2026-09-27T22:09:23+07:00">Sunday, September 27, 2026 at 10:09:23 PM</time>
+        </p>
+      </div>
+
+      <footer>
+        <h6>Terima kasih sudah berkunjung.</h6>
+      </footer>
+    </main>
   </body>
 </html>

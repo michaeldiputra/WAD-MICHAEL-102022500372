@@ -1,3 +1,152 @@
-.profile-img {
+:root {
+  font-family: Helvetica, sans-serif;
+  color: #1d2433;
+  background: #8faae6;
+  --primary-color: #5f85db;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 48px 20px;
+  background: linear-gradient(135deg, #dfe7f8, #8faae6);
+}
+
+.profile {
   width: 100%;
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 40px clamp(22px, 7vw, 64px);
+  background: #fff;
+  border-top: 5px solid var(--primary-color);
+  border-radius: 8px;
+  box-shadow: 0 18px 50px rgb(34 59 68 / 12%);
+  text-align: center;
+}
+
+.profile-header {
+  padding-bottom: 28px;
+  border-bottom: 1px solid #dfe7f8;
+}
+
+.profile-img {
+  display: block;
+  width: 144px;
+  height: 144px;
+  margin: 0 auto 22px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 8px;
+  color: #172a35;
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  margin: 0;
+  color: #5f7199;
+}
+
+.about,
+.social {
+  padding-top: 26px;
+}
+
+.details {
+  padding-top: 42px
+}
+
+.about p {
+  color: #5f7199;
+  line-height: 1.7;
+}
+
+.social h4,
+.details h5 {
+  margin-bottom: 12px;
+  color: #5f7199;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+th,
+td {
+  padding: 10px 8px;
+  border-bottom: 1px solid #dfe7f8;
+}
+
+th {
+  color: #5f7199;
+}
+
+.created {
+  margin-bottom: 0;
+  color: #738188;
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.social-links a {
+  padding: 9px 14px;
+  border: 1px solid #8faae6;
+  color: #4764a4;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.social-links a:hover,
+.social-links a:focus-visible {
+  background: #e7f5f2;
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+footer {
+  padding-top: 22px;
+  color: #738188;
+}
+
+footer h6 {
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 20px 12px;
+  }
+
+  .profile {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
 }
