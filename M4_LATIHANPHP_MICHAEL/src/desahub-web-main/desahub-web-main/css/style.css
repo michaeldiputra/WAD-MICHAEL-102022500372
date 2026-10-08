@@ -1,0 +1,115 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Variable Warna & Pengaturan Dasar */
+:root {
+    --primary-color: #2F5D50;
+    --primary-hover: #24483E;
+    --accent-color: #ecb349;
+    --bg-color: #FAFAF7;
+    --text-color: #212529;
+    --border-color: #DEE2E6;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* Navbar Custom */
+.navbar-custom {
+    background-color: var(--primary-color);
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #FFFFFF;
+}
+
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: var(--accent-color);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 3rem 0;
+    border-bottom: 1px solid var(--border-color);
+    background-color: #FFFFFF;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+/* Form Custom */
+.form-card {
+    background-color: #FFFFFF;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    padding: 1.5rem;
+}
+
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    color: #FFFFFF;
+}
+
+.form-control,
+.form-select {
+    border-radius: 4px;
+    border-color: #CED4DA;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 0 0.2rem rgba(47, 93, 80, 0.25);
+}
+
+/* Badge Status Custom */
+.badge {
+    border-radius: 4px;
+    width: 80px;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;     /* Rata tengah secara vertikal */
+    justify-content: center; /* Rata tengah secara horizontal */
+}
+.badge-pending {
+    background-color: #6C757D;
+    color: #FFFFFF;
+}
+
+.badge-diproses {
+    background-color: var(--accent-color);
+    color: #212529;
+}
+
+.badge-selesai {
+    background-color: var(--primary-color);
+    color: #FFFFFF;
+}
+
+/* Footer Custom */
+.footer-custom {
+    background-color: #FFFFFF;
+    border-top: 1px solid var(--border-color);
+    padding: 1rem 0;
+    color: #6C757D;
+    font-size: 0.9rem;
+}
